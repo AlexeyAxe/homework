@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
     MyNewArrayClass array=new MyNewArrayClass();
     Object o1= new Object();
-    array.add(o1);
+    array.add("o1");
     array.add(new Object());
     }
 }

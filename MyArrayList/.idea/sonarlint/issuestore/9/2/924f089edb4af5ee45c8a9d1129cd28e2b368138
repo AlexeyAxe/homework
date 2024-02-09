@@ -1,5 +1,9 @@
 
 7
-java:S1220""Move this file to a named package.8‘ö®ÔØ1
+java:S1220""Move this file to a named package.8ºİ²úØ1
+X
+java:S1854"6Remove this useless assignment to local variable "o1".(ÖûÇÆùÿÿÿÿ8Ñİ²úØ1
+I
+java:S1481"'Remove this unused "o1" local variable.(ÖûÇÆùÿÿÿÿ8×İ²úØ1
 O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8å³½ÔØ1
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Ùİ²úØ1
