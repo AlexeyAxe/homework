@@ -28,15 +28,17 @@ public class MyNewArrayClass {
              array[i]=array[i+1];
          }
          array[array.length-1]=null;
+         size--;
          return obj;
      }
     public boolean remove(Object obj){
-         for(int i=0;i< array.length;i++){
+         for(int i=0;i< size;i++){
             if(obj.equals(array[i])) {
-                 for(int j=i;j< array.length-1;j++){
+                 for(int j=i;j< size-1;j++){
                      array[j]=array[j+1];
                  }
-                 array[array.length-1]=null;
+                 array[size-1]=null;
+                 size--;
                  return true;
             }
         }
@@ -82,18 +84,29 @@ public class MyNewArrayClass {
         }
         return true;
     }
-//    public void sortedArray(){
-//      boolean isSorted =false;
-//      while(!isSorted){
-//          isSorted = true;
-//          for(int i =0; i < array.length-1;i++){
-//              if(array[i] > array[i+1]){
-//                  isSorted = false;
-//                  Object temp = array[i];
-//                  array[i]=array[i+1];
-//                  array[i+1]=temp;
-//              }
-//          }
-//      }
-//    }
-}
+    public int size(){
+         return size;
+    }
+    public boolean isEmpty(){
+        return size==0;
+    }
+    public void sortedArray(){
+      boolean isSorted =false;
+      while(!isSorted){
+          isSorted = true;
+          for(int i =0; i < size-1;i++){
+              if(((Comparable)array[i]).compareTo(array[i+1])>0){
+                  isSorted = false;
+                  Object temp = array[i];
+                  array[i]=array[i+1];
+                  array[i+1]=temp;
+              }
+          }
+      }
+    }
+    public void print(){
+        for(int i=0;i<size;i++){
+            System.out.println(array[i].toString());
+        }
+    }
+ }
