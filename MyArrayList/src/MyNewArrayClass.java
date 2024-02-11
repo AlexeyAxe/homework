@@ -18,20 +18,24 @@ public class MyNewArrayClass {
             arrayClone[i] = array[i];
         }
         array = arrayClone;
-
-
     }
 
     public Object get(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
         return array[index];
     }
 
     public Object remove(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
         Object obj = array[index];
-        for (int i = index; i < array.length - 1; i++) {
+        for (int i = index; i < size - 1; i++) {
             array[i] = array[i + 1];
         }
-        array[array.length - 1] = null;
+        array[size - 1] = null;
         size--;
         return obj;
     }
@@ -59,6 +63,9 @@ public class MyNewArrayClass {
     }
 
     public void add(int index, Object obj) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
         if (size == capacity) {
             grow();
         }
@@ -80,6 +87,9 @@ public class MyNewArrayClass {
     }
 
     public boolean addAll(int index, Collection<Object> col) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
         while ((size + col.size()) > capacity) {
             grow();
         }
