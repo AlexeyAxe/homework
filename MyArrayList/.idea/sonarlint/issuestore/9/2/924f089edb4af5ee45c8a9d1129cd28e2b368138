@@ -1,9 +1,18 @@
 
+o
+java:S1192"SDefine a constant instead of duplicating this literal "ĞĞ»ĞµĞºÑĞ°Ğ½Ğ´Ñ€" 3 times.(Áûép8’–ó—Ù1
 7
-java:S1220""Move this file to a named package.8ºİ²úØ1
-X
-java:S1854"6Remove this useless assignment to local variable "o1".(ÖûÇÆùÿÿÿÿ8Ñİ²úØ1
-I
-java:S1481"'Remove this unused "o1" local variable.(ÖûÇÆùÿÿÿÿ8×İ²úØ1
+java:S1220""Move this file to a named package.8…ãâ—Ù1
 O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Ùİ²úØ1
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8ˆãâ—Ù1
+O
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8ˆãâ—Ù1
+X
+java:S1854"6Remove this useless assignment to local variable "o1".(ÖûÇÆùÿÿÿÿ8£ãâ—Ù1
+I
+java:S1481"'Remove this unused "o1" local variable.(ÖûÇÆùÿÿÿÿ8¦ãâ—Ù1
+G	java:S106"+Replace this use of System.out by a logger.(‹æ¡Â8¦ãâ—Ù1
+L	java:S106"+Replace this use of System.out by a logger.(«úÂ®ıÿÿÿÿ8ªãâ—Ù1
+G	java:S106"+Replace this use of System.out by a logger.(ÅÂ­´8«ãâ—Ù1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8³ãâ—Ù1
